@@ -10,7 +10,7 @@ import SidebarLinks from "@/sidebarLinks";
     <div class="main-panel">
       <RouterView />
     </div>
-    <SideBar name="Công việc" :sideBarLinks="SidebarLinks"></SideBar>
+    <SideBar name="Công việc" :side-bar-links="SidebarLinks"></SideBar>
   </div>
 </template>
 

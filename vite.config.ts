@@ -20,5 +20,9 @@ export default defineConfig({
         additionalData: `@import "${ pathSrc }/assets/sass/_variables";`
       }
     }
+  },
+  server: {
+    https: true,
+    port: 8080
   }
 })

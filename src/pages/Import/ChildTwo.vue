@@ -1,11 +1,8 @@
 <template>
-  <div>{{ locale }}</div>
+  <div>Child2</div>
 </template>
 
 <script lang="ts" setup>
-// import config from "@/config"
-
-const locale ='vi'
 </script>
 
 <style scoped>

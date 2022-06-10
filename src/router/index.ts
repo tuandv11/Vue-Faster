@@ -1,7 +1,7 @@
 import { createRouter, createWebHistory } from 'vue-router'
 
 const router = createRouter({
-  history: createWebHistory(import.meta.env.BASE_URL),
+  history: createWebHistory(),
   routes: [
     {
       path: '/',
@@ -24,12 +24,12 @@ const importRoute = {
     {
       path: 'child2',
       meta: {title: 'Child - Two'},
-      component: () => import('@/pages/Import/Child2.vue')
+      component: () => import('@/pages/Import/ChildTwo.vue')
     },
     {
       path: 'child3',
       meta: {title: 'Child - Three'},
-      component: () => import('@/pages/Import/Child3.vue')
+      component: () => import('@/pages/Import/ChildThree.vue')
     }
   ]
 }
@@ -42,17 +42,17 @@ const exportRoute = {
     {
       path: 'child1',
       meta: {title: 'Child - One'},
-      component: () => import('@/pages/Export/Child1.vue')
+      component: () => import('@/pages/Export/ChildOne.vue')
     },
     {
       path: 'child2',
       meta: {title: 'Child - Two'},
-      component: () => import('@/pages/Export/Child2.vue')
+      component: () => import('@/pages/Export/ChildTwo.vue')
     },
     {
       path: 'child3',
       meta: {title: 'Child - Three'},
-      component: () => import('@/pages/Export/Child3.vue')
+      component: () => import('@/pages/Export/ChildThree.vue')
     }
   ]
 }

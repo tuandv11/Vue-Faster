@@ -2,10 +2,7 @@
   <div class="color">Child1</div>
 </template>
 
-<script>
-export default {
-  name: "Child1"
-}
+<script lang="ts" setup>
 </script>
 
 <style scoped lang="scss">

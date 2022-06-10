@@ -3,7 +3,7 @@ import SideBarMenu from "@/components/Dashboard/SideBarMenu.vue";
 
 interface Props {
   name: string
-  sideBarLinks: []
+  sideBarLinks: any
 }
 
 const props = defineProps<Props>()
@@ -15,8 +15,7 @@ const props = defineProps<Props>()
       <div class="header-name">{{ props.name }}</div>
     </div>
     <div class="sidebar-menus">
-      <side-bar-menu class="sidebar-menu" v-for="{name, links} in props.sideBarLinks" :name="name"
-                     :links="links"></side-bar-menu>
+      <side-bar-menu v-for="{name, links} in props.sideBarLinks" :key="name" class="sidebar-menu" :name="name" :links="links"></side-bar-menu>
     </div>
   </div>
 </template>

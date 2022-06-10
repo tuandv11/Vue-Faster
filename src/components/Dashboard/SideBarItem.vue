@@ -6,7 +6,10 @@ interface Props {
   link: {
     name: string
     collapse: boolean
-    children: []
+    children: [{
+      name: string,
+      path: string
+    }]
     path: string
     required: true
   }

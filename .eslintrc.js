@@ -2,7 +2,7 @@ module.exports = {
     env: {node: true},
     extends: [
         // 'eslint:recommended',
-        'plugin:vue/vue3-recommended',
+        // 'plugin:vue/vue3-recommended',
         'prettier',
     ],
     globals: {
