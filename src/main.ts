@@ -15,6 +15,9 @@ import { library } from '@fortawesome/fontawesome-svg-core'
 import { fas } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 
+// vee-validator
+import '@/plugins/1i8nValidator'
+
 library.add(fas)
 
 app.use(createPinia())
