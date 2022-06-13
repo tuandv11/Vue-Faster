@@ -37,7 +37,7 @@ import * as yup from 'yup'
 import { useForm, Form } from "vee-validate";
 
 const schema = yup.object({
-  name: yup.string().required(),
+  name: yup.string().required('Name là bắt buộc'),
   email: yup.string().email().required(),
   password: yup.string().min(6).required(),
   confirm_password: yup.string()
