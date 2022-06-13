@@ -15,6 +15,7 @@ import { RouterView } from 'vue-router'
   font-weight: normal;
   display: block;
   font-family: 'Roboto', sans-serif;
+  font-size: 16px;
 }
 
 </style>
